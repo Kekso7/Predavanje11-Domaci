@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--clr-blue: #095577;
+	--clr-orange: #ffb875;
+	--clr-light: #fffcf5;
+	--clr-dark-blue: #121f30;
+	--clr-dark: #080e16;
+	--font-family: "Ubuntu", sans-serif;
+}
+
+body {
+	font-family: var(--font-family);
+}
+
+/*Color*/
+
+.colorBlue {
+	color: var(--clr-blue);
+}
+
+.colorWhite {
+	color: var(--clr-light);
+}
+
+.colorOrange {
+	color: var(--clr-orange);
+}
+
+.colorDarkBlue {
+	color: var(--clr-dark-blue);
+}
+/*Background Color*/
+
+.backgroundDarkBlue {
+	background-color: var(--clr-dark-blue);
+}
+
+.backgroundOrange {
+	background-color: var(--clr-orange);
+}
+
+.backgroundBlack {
+	background-color: var(--clr-dark);
+}
+
+/*Font*/
+
+.font {
+	font-family: var(--font-family);
+}
+
+.logo a {
+	color: var(--clr-dark-blue);
+}
+
+.nav,
+.circle {
+	list-style-type: none;
+}
+
+/* CASE STUDIES */
+.studiesTitle,
+.testimonialsTitle {
+	color: var(--clr-blue);
+}
+
+.studiesParagraf,
+.testimonialsParagraf {
+	width: 50%;
+	color: var(--clr-dark-blue);
+}
+
+.perfumeImage img,
+.fourcardImage img,
+.carsImage img {
+	width: 100%;
+}
+
+.wDesctop {
+	width: 50%;
+}
+
+.titleColor {
+	color: var(--clr-blue);
+}
+
+@media only screen and (max-width: 640px) {
+	.header {
+		display: flex;
+		flex-direction: column;
+	}
+	.headerLeft {
+		text-align: center;
+		width: 80%;
+	}
+	.headerRight img {
+		display: none;
+	}
+
+	.studiesParagraf,
+	.testimonialsParagraf {
+		width: 100%;
+	}
+
+	.firstCase,
+	.thirdCase {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.secondCase {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.wDesctop {
+		width: 100%;
+	}
+
+	.perfume,
+	.cars,
+	.fourCard {
+		text-align: center;
+	}
+
+	.dole {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
